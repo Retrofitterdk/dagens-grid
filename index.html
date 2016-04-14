@@ -29,12 +29,81 @@
 </head>
 <body>
 
+  <!-- FRONTPAGE EXAMPLE ———————————————————————————————————————— -->
+
+
+
+  	<!-- columns should be the immediate child of a .row -->
+    <div class="container example-grid docs-example">
+      <h6 class="docs-header">The frontpage</h6>
+      <div id="top">
+      <div class="row">
+  	    <div class="twelve columns banner"><span>banner</span></div>
+  	  </div>
+      <div class="row">
+  	    <div class="twelve columns">Mast head</div>
+  	  </div>
+    </div>
+  	  <div class="row">
+  	    <div id="content" class="nine columns">Content
+          <div class="row">
+  			       <div class="twelve columns">Featured area</div>
+  			  </div>
+          <div class="row">
+              <div class="nine columns">
+                <div class="banner"><span>banner</span></div>
+  			        <div>Main content</div>
+              </div>
+  			      <div class="three columns">Content sidebar</div>
+        </div>
+      </div>
+  	    <div id="primary" class="three columns">
+          <div class="banner"><span>banner</span></div>
+          <div>Primary sidebar</div>
+        </div>
+    </div>
+  </div>
+
+  <!-- ARTICLE EXAMPLE ———————————————————————————————————————— -->
+
+
+
+  	<!-- columns should be the immediate child of a .row -->
+    <div class="singular container example-grid docs-example">
+      <h6 class="docs-header">An article</h6>
+      <div id="top">
+      <div class="row">
+  	    <div class="twelve columns banner"><span>banner</span></div>
+  	  </div>
+      <div class="row">
+  	    <div class="twelve columns">Mast head</div>
+  	  </div>
+    </div>
+  	  <div class="row">
+  	    <div id="content" class="nine columns">Content
+          <div class="row">
+  			       <div class="twelve columns">Entry header</div>
+  			  </div>
+          <div class="row">
+              <div class="entry-content nine columns offset-by-two">
+  			        <div>Entry content</div>
+              </div>
+        </div>
+      </div>
+  	    <div id="primary" class="three columns">
+          <div class="banner"><span>banner</span></div>
+          <div>Primary sidebar</div>
+        </div>
+    </div>
+  </div>
+
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Grid -->
   <div id="grid" class="container">
     <h6 class="docs-header">The grid</h6>
-    <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+    <p>The grid is a <u>12-column fluid grid with a max width of 1280px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
     <div class="example-grid docs-example">
       <div class="row">
         <div class="one column">One</div>
@@ -82,36 +151,6 @@
       </div>
     </div>
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-
-	<h6 class="docs-header">The grid</h6>
-	<p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
-
-
-	<!-- columns should be the immediate child of a .row -->
-  <div class="example-grid docs-example">
-    <div class="row">
-	    <div class="twelve columns">Topbanner</div>
-	  </div>
-
-	<div class="example-grid docs-example">
-    <div class="row">
-	    <div class="twelve columns">Header</div>
-	  </div>
-
-	  <div class="row">
-	    <div class="nine columns">Content
-        <div class="row">
-			       <div class="twelve columns">Featured area</div>
-			  </div>
-        <div class="row">
-			       <div class="nine columns">Content</div>
-			        <div class="three columns">Primary sidebar</div>
-			    </div>
-      </div>
-	    <div class="three columns">Primary sidebar</div>
-	  </div>
-  </div>
 
 
 <!-- End Document

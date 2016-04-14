@@ -38,20 +38,50 @@
 .column,
 .columns {
   width: 100%;
-  float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
+
+/* For devices larger than 460px */
+@media (min-width: 460px) {
+  #content .three.columns, #primary.three.columns {
+    width: 48%;
+    float: left;
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
+#primary.three.columns {
+  float: right;
+}
+.singular #primary.three.columns {
+    width: 100%;
+    float: left;
+}
+}
+
+/* For devices larger than 640px */
+@media (min-width: 640px) {
+  .column,
+  .columns {
+    float: left;
+   }
+
+   .entry-content {
+     width: 91.3333%;
+   }
+
+  .singular #primary.three.columns, #primary.three.columns {
+    width: 30.6666666667%;
+    float: right;
+  }
+  #content.nine.columns {
+    width: 65.3333333333%;
+  }
+  #content .three.columns {
+    width: 100%;
+  }
+}
+
+/* For devices larger than 900px */
+@media (min-width: 900px) {
   .column,
   .columns {
     margin-left: 4%; }
@@ -59,16 +89,23 @@
   .columns:first-child {
     margin-left: 0; }
 
+    #content .three.columns {
+      width: 30.6666666667%;
+    }
+    #content .nine.columns {
+      width: 65.3333333333%;
+    }
+
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
+  .singular #primary.three.columns, #primary.three.columns, .three.columns  { width: 22%;            }
   .four.columns                   { width: 30.6666666667%; }
   .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
+  .singular #content .entry-content, #content.nine.columns, .nine.columns                   { width: 74.0%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
@@ -112,6 +149,12 @@
 
 }
 
+.example-grid {
+    display: table;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
 .example-grid .column, .example-grid .columns {
     background: #eee none repeat scroll 0 0;
     border-radius: 4px;
@@ -124,6 +167,37 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+.example-grid .banner {
+    background: #111111 none repeat scroll 0 0;
+    color: white;
+}
+
+.example-grid .columns .columns {
+    background: #e1e1e1 none repeat scroll 0 0;
+}
+
+.banner span::before {
+    content: "Module-";
+}
+@media (min-width: 460px) {
+#primary .banner span::before {
+    content: "Skyscraper-";
+}
+.singular #primary .banner span::before {
+  content: "Module-";
+}
+}
+@media (min-width: 640px) {
+.singular #primary .banner span::before {
+      content: "Skyscraper-";
+  }
+
+#top .banner span::before {
+    content: "Top-";
+}
+}
+
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -397,7 +471,6 @@ hr {
 
 /* Self Clearing Goodness */
 .container:after,
-.row:after,
 .u-cf {
   content: "";
   display: table;

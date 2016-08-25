@@ -51,7 +51,7 @@
 #primary.three.columns {
   float: right;
 }
-.singular #primary.three.columns {
+body:not(home).singular #primary.three.columns {
     width: 100%;
     float: left;
 }
